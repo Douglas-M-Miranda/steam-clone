@@ -1,0 +1,92 @@
+.containerMenuNave {
+    background-color: #171d25;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: 6.5em;
+
+    .menuLogo {
+        margin-left: 1em;
+        img {
+            height: 2.7em;
+        }
+    }
+
+    .containerNave {
+        ul {
+            display: flex;
+            gap: 15px;
+
+            list-style: none;
+            .naveItem {
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #dcdedf;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .asideMenu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            position: absolute;
+            right: 20px;
+            top: 5px;
+            color: #b8b6b4;
+
+            .asideInstall{
+                margin-right: .2em;
+                button {
+                    background-color: #5c7e10;
+                    border: none;
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    padding: .3em;
+                    transition: background-color 0.25s;
+                    
+                    &:hover {
+                        background-color: #6c9018;
+                    }
+
+                    span {
+                        color: #e4e4dc;
+                        font-size: .8rem;
+                        transition: color 0.25s;
+
+                        &:hover {
+                            color: #ffffff;
+                            // #b8b6b4
+                        }
+                    }
+                }
+            }
+
+            .asideLogin, .asideLanguage{
+                .asideLink {
+                    color: #b8b6b4;
+                    font-size: 0.688rem;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+            
+            .asideLink {
+                display: flex;
+                align-items: center;
+                gap: 1px;
+            }
+
+        }
+    }
+}
