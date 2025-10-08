@@ -2,9 +2,14 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo_steam.svg"
 import styles from "./mainMenu.module.scss"
 import { ChevronDown, HardDriveDownload } from "lucide-react";
+import { dropdownItems } from "../Dropdown-items/DropdownItems";
+import { useState } from "react";
+
+
 
 function MainMenu() {
-
+    const [isOpen, setIsOpen] = useState<number | null >(null)
+ 
     return (
         <header className={styles.containerMenuNave}>
             <div className={styles.menuLogo}>
@@ -13,22 +18,58 @@ function MainMenu() {
 
             <nav className={styles.containerNave}>
                 <ul>
-                    <li>
-                        <Link to="/" className={styles.naveItem}>
+                    {dropdownItems.map((i) => (
+                        <li key={i.id}>
+                            <Link 
+                            to="/" 
+                            className={styles.naveItem}
+                            onMouseEnter={() => setIsOpen(i.id)}
+                            onMouseLeave={() => setIsOpen(null)}
+                            >
+                            {i.title}
+                           
+                            {isOpen ===  i.id &&(
+                                <ul className={styles.containerDropdown}>
+                                     {i.name.map((subItem, index) => (
+                                    <li key={index} className={styles.dropdownItem}>
+                                        {subItem}
+                                    </li>
+                                     ))}
+                                </ul>
+                            )}
+                            </Link>
+                        </li>
+                    ))}
+
+                    {/* <li>
+                        <Link
+                            to="/"
+                            className={styles.naveItem}
+                            onMouseEnter={teste1}
+                            onMouseLeave={() => setTeste(false)}
+                        >
                             STORE
+                            {teste &&
+                                (<div>
+                                    alou<br />
+                                    alou<br />
+                                    aliy
+                                </div>)}
                         </Link>
                     </li>
 
                     <li>
-                        <Link to="/" className={styles.naveItem}>
+                        <Link to="/" className={styles.naveItem}
+                        onMouseEnter={() => setTeste(true)}
+                            onMouseLeave={() => setTeste(false)}
+                        >
                             COMMUNITY
-                        </Link>
-                    </li>
-
-                    <li>
-
-                        <Link to="/" className={styles.naveItem}>
-                            INKY
+                            {teste &&
+                                (<div>
+                                    alou<br />
+                                    alou<br />
+                                    aliy
+                                </div>)}
                         </Link>
                     </li>
 
@@ -42,7 +83,7 @@ function MainMenu() {
                         <Link to="/" className={styles.naveItem}>
                             SUPPORT
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
 
                 <div className={styles.asideMenu}>
@@ -60,7 +101,7 @@ function MainMenu() {
                     </div>
 
                     |
-                    
+
                     <div className={styles.asideLanguage}>
                         <Link to="/" className={styles.asideLink}>
                             Language

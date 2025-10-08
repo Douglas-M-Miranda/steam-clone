@@ -8,6 +8,7 @@
 
     .menuLogo {
         margin-left: 1em;
+
         img {
             height: 2.7em;
         }
@@ -16,18 +17,47 @@
     .containerNave {
         ul {
             display: flex;
-            gap: 15px;
 
             list-style: none;
+
             .naveItem {
+                padding: .5em;
                 text-decoration: none;
                 font-size: 1rem;
                 font-weight: 500;
                 color: #dcdedf;
+                position: relative;
 
                 &:hover {
                     color: #ffffff;
                 }
+
+                .containerDropdown {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    left: 5px;
+                    top: 30px;
+                    background-color: #3D4450;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    width: max-content;
+
+                    .dropdownItem {
+                        font-size: .75rem;
+                        padding: .7em 2em .7em .9em;
+
+                        &:hover {
+                            background-color: #dcdedf;
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            div {
+                background-color: pink;
+                position: absolute;
+                z-index: 1;
             }
         }
 
@@ -41,8 +71,9 @@
             top: 5px;
             color: #b8b6b4;
 
-            .asideInstall{
+            .asideInstall {
                 margin-right: .2em;
+
                 button {
                     background-color: #5c7e10;
                     border: none;
@@ -51,7 +82,7 @@
                     align-items: center;
                     padding: .3em;
                     transition: background-color 0.25s;
-                    
+
                     &:hover {
                         background-color: #6c9018;
                     }
@@ -69,7 +100,8 @@
                 }
             }
 
-            .asideLogin, .asideLanguage{
+            .asideLogin,
+            .asideLanguage {
                 .asideLink {
                     color: #b8b6b4;
                     font-size: 0.688rem;
@@ -80,7 +112,7 @@
                     }
                 }
             }
-            
+
             .asideLink {
                 display: flex;
                 align-items: center;
