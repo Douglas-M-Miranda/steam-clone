@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo_steam.svg"
 import styles from "./mainMenu.module.scss"
 import { ChevronDown, HardDriveDownload } from "lucide-react";
-import { dropdownItems } from "../Dropdown-items/DropdownItems";
+import { dropdownItems } from "./Dropdown-items/DropdownItems";
 import { useState } from "react";
 
 
@@ -40,50 +40,6 @@ function MainMenu() {
                             </Link>
                         </li>
                     ))}
-
-                    {/* <li>
-                        <Link
-                            to="/"
-                            className={styles.naveItem}
-                            onMouseEnter={teste1}
-                            onMouseLeave={() => setTeste(false)}
-                        >
-                            STORE
-                            {teste &&
-                                (<div>
-                                    alou<br />
-                                    alou<br />
-                                    aliy
-                                </div>)}
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link to="/" className={styles.naveItem}
-                        onMouseEnter={() => setTeste(true)}
-                            onMouseLeave={() => setTeste(false)}
-                        >
-                            COMMUNITY
-                            {teste &&
-                                (<div>
-                                    alou<br />
-                                    alou<br />
-                                    aliy
-                                </div>)}
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link to="/" className={styles.naveItem}>
-                            CHAT
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link to="/" className={styles.naveItem}>
-                            SUPPORT
-                        </Link>
-                    </li> */}
                 </ul>
 
                 <div className={styles.asideMenu}>

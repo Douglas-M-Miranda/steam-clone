@@ -1,15 +1,3 @@
-// export const storeMenu = {
-//     id: 1,
-//     title: "STORE",
-//     name: ["Home", "Discovery Queue", "Wishlist", "Points Shop", "News", "Stats"]
-// }
-
-// export const storeCommunity = {
-//     id: 2,
-//     title:"COMMUNITY",
-//     name: ["Home", "Discussions", "Workshop", "Market", "Broadcasts"]
-// }
-
 export const dropdownItems = [
     {
         id: 1,
