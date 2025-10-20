@@ -20,19 +20,22 @@
 
 
 .navDropdownBrowse {
+    padding: .5em 0 2em 0;
+   
     p {
         height: 28px;
         font-size: 0.813rem;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 28px;
         letter-spacing: .1px;
         color: #ababab;
-        margin: .4em 0 0 1em;
+        margin: 0 0 0 1em;
     }
 
     .btnPrimary {
         display: flex;
         flex-direction: column;
+        width: min-content;
         gap: 10px;
 
         .btnTopSellers {
@@ -65,6 +68,40 @@
 
                 span {
                     @extend %text-properties;
+                }
+            }
+        }
+    }
+
+    .btnSecondary {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin-left: 10px;
+        .containerBtnSecondary {
+            background: linear-gradient(180deg, rgba(97, 34, 200, 0.29) -5%, #0a81c3c4 100%);
+            box-shadow: inset 0px 0px 2px #31809e73,2px 2px 2px rgba(85,84,84,.1);
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 2em 2.331em;
+            text-align: center;
+
+            &:hover {
+                background: linear-gradient(180deg, rgba(97, 34, 200, 0.29) -25%, #0c7fcfd4 100%);
+                transition: background 2s ease;
+            }
+
+            &:hover .BtnSecondaryText {
+                transform: translatey(50%);
+                transition: transform .2s ease;
+            }
+
+            .BtnSecondaryText {
+                span {
+                    font-size: 0.813rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: #fff;
                 }
             }
         }
