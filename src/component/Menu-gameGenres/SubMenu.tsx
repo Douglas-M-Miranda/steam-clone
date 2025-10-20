@@ -1,8 +1,11 @@
 import { subDropdown } from "./subDropdown/SubDropdown";
 import { ChevronDown, Search } from "lucide-react";
+import BrowseMenu from "./subDropdown/subDropdownCategories/BrowseMenu";
 import styles from "./SubMenu.module.scss"
 
 function SubMenu() {
+    const teste = 1
+
     return(
         <nav className={styles.containerNav}>
             <ul>
@@ -13,8 +16,7 @@ function SubMenu() {
                         <ChevronDown size={16} className={styles.icon}/>
                     </li>
                 ))}
-            </ul>
-
+                
             <form className={styles.containerForm}>
                 <input type="text" className={styles.searchInput} placeholder="Search the store"/>
 
@@ -22,6 +24,11 @@ function SubMenu() {
                     <Search size={18} color="#fff" className={styles.iconSearch}/>
                 </button>
             </form>
+            </ul>
+                {teste === 1 && (
+                    <div className={styles.dropdownMenu}><BrowseMenu/></div>
+                )}
+
         </nav>
     );
 }

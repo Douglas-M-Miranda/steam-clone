@@ -1,0 +1,72 @@
+@use '../../../../styles/mixinLibrary' as mixinLibrary;
+
+%textContainer-properties {
+    background-color: #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .2);
+    border-radius: 2px;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: .625em .9375em;
+}
+
+%text-properties {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #171d25;
+}
+
+
+.navDropdownBrowse {
+    p {
+        height: 28px;
+        font-size: 0.813rem;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: .1px;
+        color: #ababab;
+        margin: .4em 0 0 1em;
+    }
+
+    .btnPrimary {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .btnTopSellers {
+            @include mixinLibrary.btnImagesMenu-browse($colorBackground:#CE69EE, $colorBox-shadow:#ce69ee, $colorHover:#e291fa);
+
+            &:hover .topSelerrsText {
+                transform: translate(-50%, -40%);
+                transition: transform .2s ease;
+            }
+
+            .topSelerrsText {
+                @extend %textContainer-properties;
+
+                span {
+                    @extend %text-properties;
+                }
+            }
+        }
+
+        .btnDiscounts {
+            @include mixinLibrary.btnImagesMenu-browse($colorBackground:#07D0BF, $colorBox-shadow:#07D0BF73, $colorHover:#2ee6d7);
+
+            &:hover .discountsText {
+                transform: translate(-50%, -40%);
+                transition: transform .2s ease;
+            }
+
+            .discountsText {
+                @extend %textContainer-properties;
+
+                span {
+                    @extend %text-properties;
+                }
+            }
+        }
+    }
+}

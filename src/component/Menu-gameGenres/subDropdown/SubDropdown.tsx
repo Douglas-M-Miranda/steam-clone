@@ -14,5 +14,9 @@ export const subDropdown = [
     {
         id: 4,
         title:"Ways to Play"
+    },
+    {
+        id: 5,
+        title:"More"
     }
 ]
