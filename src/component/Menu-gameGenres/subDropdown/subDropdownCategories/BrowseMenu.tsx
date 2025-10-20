@@ -65,7 +65,7 @@ function BrowseMenu() {
                 </div>
 
                 <div className={styles.menuSecondary}>
-                    {/* <ul>
+                    <ul>
                         <li>Store Home</li>
                         <li>Steam Charts</li>
                         <li>Upcoming Releases</li>
@@ -73,7 +73,7 @@ function BrowseMenu() {
                         <li>Gift Cards</li>
                         <li>News & Updates</li>
                         <li>Preferences</li>
-                    </ul> */}
+                    </ul>
                 </div>
             </ul>
         </nav>
