@@ -21,7 +21,7 @@
 
 .navDropdownBrowse {
     padding: .5em 0 2em 0;
-   
+
     p {
         height: 28px;
         font-size: 0.813rem;
@@ -32,96 +32,103 @@
         margin: 0 0 0 1em;
     }
 
-    .btnPrimary {
+    .containerMenuBrowse {
         display: flex;
-        flex-direction: column;
-        width: min-content;
-        gap: 10px;
+        align-items: center;
 
-        .btnTopSellers {
-            @include mixinLibrary.btnImagesMenu-browse($colorBackground:#CE69EE, $colorBox-shadow:#ce69ee, $colorHover:#e291fa);
-
-            &:hover .topSelerrsText {
-                transform: translate(-50%, -40%);
-                transition: transform .2s ease;
-            }
-
-            .topSelerrsText {
-                @extend %textContainer-properties;
-
-                span {
-                    @extend %text-properties;
-                }
-            }
-        }
-
-        .btnDiscounts {
-            @include mixinLibrary.btnImagesMenu-browse($colorBackground:#07D0BF, $colorBox-shadow:#07D0BF73, $colorHover:#2ee6d7);
-
-            &:hover .discountsText {
-                transform: translate(-50%, -40%);
-                transition: transform .2s ease;
-            }
-
-            .discountsText {
-                @extend %textContainer-properties;
-
-                span {
-                    @extend %text-properties;
-                }
-            }
-        }
-    }
-
-    .btnSecondary {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 10px;
-        margin-left: 10px;
-        .containerBtnSecondary {
-            background: linear-gradient(180deg, rgba(97, 34, 200, 0.29) -5%, #0a81c3c4 100%);
-            box-shadow: inset 0px 0px 2px #31809e73,2px 2px 2px rgba(85,84,84,.1);
-            border-radius: 4px;
-            cursor: pointer;
-            padding: 2em 2.331em;
-            text-align: center;
-
-            &:hover {
-                background: linear-gradient(180deg, rgba(97, 34, 200, 0.29) -25%, #0c7fcfd4 100%);
-                transition: background 2s ease;
-            }
-
-            &:hover .BtnSecondaryText {
-                transform: translatey(50%);
-                transition: transform .2s ease;
-            }
-
-            .BtnSecondaryText {
-                span {
-                    font-size: 0.813rem;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    color: #fff;
-                }
-            }
-        }
-    }
-
-    .menuSecondary {
-        ul {
+        .btnPrimary {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            gap: .7em;
-            margin-left: 1em;
+            width: min-content;
+            gap: 10px;
 
-            li {
-                font-size: 0.813rem;
-                color: #DCDEDF;
-                font-weight: 400;
-                padding: 0;
-                &:hover{
-                    color: #fff;
+            .btnTopSellers {
+                @include mixinLibrary.btnImagesMenu-browse($colorBackground: #CE69EE, $colorBox-shadow: #ce69ee, $colorHover: #e291fa);
+
+                &:hover .topSelerrsText {
+                    transform: translate(-50%, -40%);
+                    transition: transform .2s ease;
+                }
+
+                .topSelerrsText {
+                    @extend %textContainer-properties;
+
+                    span {
+                        @extend %text-properties;
+                    }
+                }
+            }
+
+            .btnDiscounts {
+                @include mixinLibrary.btnImagesMenu-browse($colorBackground: #07D0BF, $colorBox-shadow: #07D0BF73, $colorHover: #2ee6d7);
+
+                &:hover .discountsText {
+                    transform: translate(-50%, -40%);
+                    transition: transform .2s ease;
+                }
+
+                .discountsText {
+                    @extend %textContainer-properties;
+
+                    span {
+                        @extend %text-properties;
+                    }
+                }
+            }
+        }
+
+        .btnSecondary {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-left: 10px;
+
+            .containerBtnSecondary {
+                background: linear-gradient(180deg, rgba(97, 34, 200, 0.29) -5%, #0a81c3c4 100%);
+                box-shadow: inset 0px 0px 2px #31809e73, 2px 2px 2px rgba(85, 84, 84, .1);
+                border-radius: 4px;
+                cursor: pointer;
+                padding: 2em 2.331em;
+                text-align: center;
+
+                &:hover {
+                    background: linear-gradient(180deg, rgba(97, 34, 200, 0.29) -25%, #0c7fcfd4 100%);
+                    transition: background 2s ease;
+                }
+
+                &:hover .BtnSecondaryText {
+                    transform: translatey(50%);
+                    transition: transform .2s ease;
+                }
+
+                .BtnSecondaryText {
+                    span {
+                        font-size: 0.813rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .menuSecondary {
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: .7em;
+                margin-left: 1em;
+
+                li {
+                    font-size: 0.813rem;
+                    color: #DCDEDF;
+                    font-weight: 400;
+                    padding: 0;
+
+                    &:hover {
+                        color: #fff;
+                    }
                 }
             }
         }

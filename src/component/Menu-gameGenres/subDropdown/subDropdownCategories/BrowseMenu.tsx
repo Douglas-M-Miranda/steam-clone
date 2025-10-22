@@ -5,7 +5,7 @@ function BrowseMenu() {
         <nav className={styles.navDropdownBrowse}>
             <p>Browse Top Destinations</p>
 
-            <ul>
+            <div className={styles.containerMenuBrowse}>
                 <div className={styles.btnPrimary}>
                     <div className={styles.btnTopSellers}>
                         <div className={styles.topSelerrsText}>
@@ -75,7 +75,7 @@ function BrowseMenu() {
                         <li>Preferences</li>
                     </ul>
                 </div>
-            </ul>
+            </div>
         </nav>
     )
 }

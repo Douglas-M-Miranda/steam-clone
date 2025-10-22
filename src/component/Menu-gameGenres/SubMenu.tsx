@@ -1,6 +1,7 @@
 import { subDropdown } from "./subDropdown/SubDropdown";
 import { ChevronDown, Search } from "lucide-react";
-import BrowseMenu from "./subDropdown/subDropdownCategories/BrowseMenu";
+import RecommendationsMenu from "./subDropdown/subDropdownCategories/RecommendationsMenu";
+// import BrowseMenu from "./subDropdown/subDropdownCategories/BrowseMenu";
 import styles from "./SubMenu.module.scss"
 
 function SubMenu() {
@@ -26,7 +27,9 @@ function SubMenu() {
             </form>
             </ul>
                 {teste === 1 && (
-                    <div className={styles.dropdownMenu}><BrowseMenu/></div>
+                    <div className={styles.dropdownMenu}>
+                        <RecommendationsMenu/>
+                    </div>
                 )}
 
         </nav>
