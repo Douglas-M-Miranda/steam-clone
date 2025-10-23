@@ -11,10 +11,12 @@ function BrowseMenu() {
                         <div className={styles.topSelerrsText}>
                             <span>Top Sellers</span>
                         </div>
+                        
                         <div className={styles.btnTopSellersImages}>
                             {/* Dynamic background with the top-selling games */}
                         </div>
                     </div>
+
                     <div className={styles.btnDiscounts}>
                         <div className={styles.discountsText}>
                             <span>Discounts & Events</span>
