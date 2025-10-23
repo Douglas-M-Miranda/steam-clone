@@ -1,10 +1,10 @@
 // 0.688
 .navDropdownCategories {
+    margin: .5em 1em;
     .containerCategoriesGenres {
         .CategoriesGenresTexts {
             display: flex;
             justify-content: space-between;
-            margin: .5em 1em;
 
             .CategoriesGenresText {
                 font-size: 0.688rem;
@@ -31,7 +31,6 @@
 
         .containerCategoriesBtnGenres {
             display: flex;
-            justify-content: center;
             gap: 10px;
 
             .btnGenres {
@@ -90,6 +89,48 @@
                     }
                 }
             }
+        }
+    }
+
+    .containerCategoriesTags {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2em 0;
+        
+        .groupTags {
+            ul {
+                display: flex;
+                gap: 10px;
+                li {
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                    line-height: 20px;
+                    color: #67c1f5;
+                    background: rgba(26,159,255,.2);
+                    border-radius: 3px;
+                    padding: 0 12px;
+
+                    &:hover {
+                        background: linear-gradient(135deg, #67c1f5 0%, #417a9b 100%);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .CategoriesAllTagsText {
+            font-size: 0.813rem;
+                font-weight: 700;
+                line-height: 28px;
+                color: #1A9FFF;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                &:hover {
+                    color: #fff;
+                }
         }
     }
 }

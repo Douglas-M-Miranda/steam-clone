@@ -13,7 +13,7 @@ function CategoriesMenu() {
                     </span>
                     <span className={styles.CategoriesAllGenresText}>
                         View all genres & themes
-                        <ChevronRight />
+                        <ChevronRight size={20}/>
                     </span>
 
                 </div>
@@ -22,7 +22,7 @@ function CategoriesMenu() {
 
                     <div className={styles.btnGenres}>
                         <img className={styles.btnGenreImage} src="https://store.akamai.steamstatic.com/categories/image/category/scifi?cc=BR&l=english" alt="" />
-                        
+
                         <div className={styles.backgroundFake}></div>
 
                         <div className={styles.btnGenresInternalConfigurationText}>
@@ -31,11 +31,11 @@ function CategoriesMenu() {
                             </span>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div className={styles.btnGenres}>
                         <img className={styles.btnGenreImage} src="https://store.akamai.steamstatic.com/categories/image/category/simulation?cc=BR&l=english" alt="" />
-                        
+
                         <div className={styles.backgroundFake}></div>
 
                         <div className={styles.btnGenresInternalConfigurationText}>
@@ -47,7 +47,7 @@ function CategoriesMenu() {
 
                     <div className={styles.btnGenres}>
                         <img className={styles.btnGenreImage} src="https://store.akamai.steamstatic.com/categories/image/category/open_world?cc=BR&l=english" alt="" />
-                        
+
                         <div className={styles.backgroundFake}></div>
 
                         <div className={styles.btnGenresInternalConfigurationText}>
@@ -59,7 +59,7 @@ function CategoriesMenu() {
 
                     <div className={styles.btnGenres}>
                         <img className={styles.btnGenreImage} src="https://store.akamai.steamstatic.com/categories/image/category/adventure?cc=BR&l=english" alt="" />
-                        
+
                         <div className={styles.backgroundFake}></div>
 
                         <div className={styles.btnGenresInternalConfigurationText}>
@@ -71,7 +71,7 @@ function CategoriesMenu() {
 
                     <div className={styles.btnGenres}>
                         <img className={styles.btnGenreImage} src="https://store.akamai.steamstatic.com/categories/image/category/horror?cc=BR&l=english" alt="" />
-                        
+
                         <div className={styles.backgroundFake}></div>
 
                         <div className={styles.btnGenresInternalConfigurationText}>
@@ -83,7 +83,7 @@ function CategoriesMenu() {
 
                     <div className={styles.btnGenres}>
                         <img className={styles.btnGenreImage} src="https://store.akamai.steamstatic.com/categories/image/category/anime?cc=BR&l=english" alt="" />
-                        
+
                         <div className={styles.backgroundFake}></div>
 
                         <div className={styles.btnGenresInternalConfigurationText}>
@@ -98,8 +98,25 @@ function CategoriesMenu() {
             </div>
 
             <div className={styles.containerCategoriesTags}>
-                <div></div>
+                <div className={styles.groupTags}>
+                    <ul>
+                        <li>Adventure</li>
+                        <li>Puzzle</li>
+                        <li>Casual</li>
+                        <li>Survival</li>
+                        <li>Strategy</li>
+                        <li>Great on Deck</li>
+                        <li>Role-Playing</li>
+                        <li>Visual Novel</li>
+                        <li>VR Titles</li>
+                    </ul>
+                </div>
 
+
+                <span className={styles.CategoriesAllTagsText}>
+                    View all tags
+                    <ChevronRight size={20}/>
+                </span>
             </div>
         </nav>
     );
