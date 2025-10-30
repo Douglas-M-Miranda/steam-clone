@@ -12,66 +12,64 @@
         top: -2.5em;
     }
 
-    .containerListWaysToPlay {
-        .containerBtnWaysToPlay {
-            display: grid;
-            grid-template-columns: repeat(3, 14.473em);
-            gap: 4px;
+    .containerBtnWaysToPlay {
+        display: grid;
+        grid-template-columns: repeat(3, 14.473em);
+        gap: 4px;
 
-            width: 43.919em;
-            height: 11.125em;
+        width: 43.919em;
+        height: 11.125em;
 
-            .btnWayToPlay {
-                box-shadow: 2px 2px 2px rgba(43, 43, 43, .1);
-                background-color: #1A9FFF;
-                border-radius: 2px;
-                padding: 9px 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center; 
-                gap: 10px;
-                cursor: pointer;
+        .btnWayToPlay {
+            box-shadow: 2px 2px 2px rgba(43, 43, 43, .1);
+            background-color: #1A9FFF;
+            border-radius: 2px;
+            padding: 9px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
 
-                &:hover {
+            &:hover {
 
-                    .btnWarToPlayImage,
-                    .btnWayToPlayText {
-                        transform: translateY(10px);
-                        color: #fff;
-                    }
-                }
-
-                .btnWarToPlayImage {
-                    display: block;
-                    width: 2.875em;
-                    height: 2.875em;
-                    transition: transform .2s ease;
-
-                    img {
-                        width: 100%;
-                        height: auto;
-                        fill: white;
-                    }
-                }
-
+                .btnWarToPlayImage,
                 .btnWayToPlayText {
-                    font-size: 0.875rem;
-                    font-weight: 800;
-                    list-style: 16px;
-                    color: #191d25;
-                    text-transform: uppercase;
-                    transition: transform .2s ease, color .2s ease;
+                    transform: translateY(10px);
+                    color: #fff;
                 }
             }
 
-            .btnWayToPlay_4 {
-                width: 21.834em;
+            .btnWarToPlayImage {
+                display: block;
+                width: 2.875em;
+                height: 2.875em;
+                transition: transform .2s ease;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    fill: white;
+                }
             }
 
-            .btnWayToPlay_5 {
-                width: 21.8em;
-                margin-left: 7.42em;
+            .btnWayToPlayText {
+                font-size: 0.875rem;
+                font-weight: 800;
+                list-style: 16px;
+                color: #191d25;
+                text-transform: uppercase;
+                transition: transform .2s ease, color .2s ease;
             }
+        }
+
+        .btnWayToPlay_4 {
+            width: 21.834em;
+        }
+
+        .btnWayToPlay_5 {
+            width: 21.8em;
+            margin-left: 7.42em;
         }
     }
 
@@ -84,15 +82,15 @@
             margin-left: 1em;
 
             li {
-                    font-size: 0.813rem;
-                    font-weight: 400;
-                    color: #DCDEDF;
-                    padding: 0;
+                font-size: 0.813rem;
+                font-weight: 400;
+                color: #DCDEDF;
+                padding: 0;
 
-                    &:hover {
-                        color: #fff;
-                    }
+                &:hover {
+                    color: #fff;
                 }
+            }
         }
     }
 }

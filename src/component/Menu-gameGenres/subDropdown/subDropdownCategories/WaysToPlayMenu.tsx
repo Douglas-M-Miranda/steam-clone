@@ -8,29 +8,22 @@ function WaysToPlayMenu() {
                 Ways to play games
             </span>
 
-            <div className={styles.containerListWaysToPlay}>
+            <div className={styles.containerBtnWaysToPlay}>
+                {BtnWaysToPlayShape.map((game) => (
+                    <div key={game.id} className={[styles.btnWayToPlay, styles[game.classname]]
+                        .filter(Boolean)
+                        .join(' ')}
+                    >
+                        <span className={styles.btnWarToPlayImage}>
+                            <img src={game.image} alt={game.alt} />
+                        </span>
 
-                <div className={styles.containerBtnWaysToPlay}>
-                    {BtnWaysToPlayShape.map((game) => (
-                        <div key={game.id} className={[styles.btnWayToPlay, styles[game.classname]]
-                            .filter(Boolean)
-                            .join(' ')}
-                        >
-                            <span className={styles.btnWarToPlayImage}>
-                                <img src={game.image} alt={game.alt} />
-                            </span>
-                            
-                            <span className={styles.btnWayToPlayText}>
-                                {game.title}
-                            </span>
+                        <span className={styles.btnWayToPlayText}>
+                            {game.title}
+                        </span>
 
-                        </div>
-                    ))}
-                </div>
-
-                <div className={styles.containerListOnlinePlay}>
-
-                </div>
+                    </div>
+                ))}
             </div>
 
             <div className={styles.containerWaysToPlaySubMenu}>
