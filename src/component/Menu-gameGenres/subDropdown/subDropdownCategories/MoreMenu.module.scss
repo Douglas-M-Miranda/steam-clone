@@ -1,0 +1,138 @@
+.navDropdownMore {
+    padding-bottom: 1em;
+    margin: .5em 1em 1.5em 1em;
+    background: linear-gradient(90deg, rgba(126, 171, 255, 0.1) 0%, #29303e00 100%);
+    border-radius: 4px;
+    display: flex;
+    gap: 1em;
+    
+    .containerSectionList {
+        padding: 0.75em;
+       
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+
+             li {
+                font-size: 0.813rem;
+                font-weight: 400;
+                color: #DCDEDF;
+                padding: 0;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                .containerSectionListBtn {
+                    background: linear-gradient(90deg, #1a9fff2b 0%, #1a9fff9c 100%);
+                    border: 0;
+                    font-size: 0.813rem;
+                    font-weight: 400;
+                    color: #fff;
+                    padding: 0 8px;
+                    line-height: 28px;
+                    cursor: pointer;
+                    width: 185px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-left: -.2em;
+                }
+            }
+        }
+    }
+
+    .containersectionsBtn {
+        margin-top: 1em;
+
+        .sectionBtnText {
+            font-size: 0.688rem;
+            font-weight: 600;
+            line-height: 28px;
+            text-transform: uppercase;
+            // height: 28px;
+            color: #abababa6;
+        }
+
+        .containerbtn {
+            display: grid;
+            grid-template-columns: repeat(2, 10.295em);
+            grid-auto-rows: 5.313em;
+            gap: .3em;
+            
+            .sectionBtn {
+                background-color: #1A9FFF;
+                box-shadow: 2px 2px 2px rgba(43,43,43,.1);
+                border-radius: 2px;
+                padding: 9px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .sectionBtnTextDescription {
+                    font-size: 0.875rem;
+                    font-weight: 800;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    color: #191d25;
+                }
+            }
+
+            .sectionBtn_3 {
+                grid-column: 1/3;
+            }
+        }
+    }
+
+    .containerSectionSubList {
+        display: flex;
+        align-items: center;
+        gap: 4em;
+
+        .sectionSubListSoftware {
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: .5em;
+                margin-top: 10px;
+
+                li {
+                    font-size: 0.813rem;
+                    font-weight: 400;
+                    color: #DCDEDF;
+                    padding: 0;
+                }
+
+                .sectionBar {
+                    height: 1px;
+                    width: 100%;
+                    background: linear-gradient(90deg, #ffffff30 42.5%, #ffffff00 100%);
+                    border: none;
+                }
+            }
+        }
+
+        .sectionSubListEvent {
+            align-self: start;
+            margin-top: 1.6em;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: .5em;
+                margin-top: 10px;
+
+                li {
+                    font-size: 0.813rem;
+                    font-weight: 400;
+                    color: #DCDEDF;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
