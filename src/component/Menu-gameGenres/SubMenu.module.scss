@@ -21,9 +21,11 @@
 
             &:hover .icon {
                 transform: translateY(2px);
-                transition: .2s ease-in-out;
             }
             
+            .icon {
+                transition: .2s ease-in-out;
+            }
         }
           
         .containerForm {
