@@ -20,12 +20,9 @@ function SubMenu({ closeItem, setCloseItem }: SubMenuProps) {
         if (closeItem === true) {
             setDropDownId(null)
         }
-
-        console.log("alou")
-
     }, [closeItem]);
 
-    useEffect(() => {
+    useEffect(() => {   
         if (dropDownId !== null) {
             setCloseItem(false);
         }
@@ -47,6 +44,10 @@ function SubMenu({ closeItem, setCloseItem }: SubMenuProps) {
             return <MoreMenu />
         }
     })();
+    
+    const handleClick = (idItem:number) => {
+        setDropDownId(prev => (prev === idItem ? null : idItem))
+    }
 
     return (
         <nav className={styles.containerNav}>
@@ -54,11 +55,11 @@ function SubMenu({ closeItem, setCloseItem }: SubMenuProps) {
                 {subDropdown.map((sub) => (
                     <li
                         key={sub.id}
-                        onClick={() => setDropDownId(sub.id)}
+                        onClick={() => handleClick(sub.id)}
                     >
                         {sub.title}
 
-                        <ChevronDown size={16} className={styles.icon} />
+                        <ChevronDown size={ 16} className={styles.icon} />
                     </li>
                 ))}
 

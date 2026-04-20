@@ -1,0 +1,10 @@
+.containerMainStore {
+    .mainPromotionalVideo {
+        background-color: pink;
+        overflow: hidden;
+        .homeVideo {
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

@@ -7,7 +7,7 @@ import { useState, type SetStateAction } from 'react'
 
 function App() {
   const [itemOpen, setItemOpen] = useState(false)
-  console.log(itemOpen)
+  // console.log(itemOpen)
 
   const isOpenDropDown = (isOpen: boolean) => {
       setItemOpen(isOpen)
