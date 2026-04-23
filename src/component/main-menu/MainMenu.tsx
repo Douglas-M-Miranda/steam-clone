@@ -26,7 +26,7 @@ function MainMenu() {
                             onMouseEnter={() => setIsOpen(i.id)}
                             onMouseLeave={() => setIsOpen(null)}
                             >
-                            {i.title}
+                            <span>{i.title}</span>
                            
                             {isOpen ===  i.id &&(
                                 <ul className={styles.containerDropdown}>

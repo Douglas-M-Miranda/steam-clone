@@ -54,7 +54,8 @@ function RecommendationsMenu() {
                 </div>
 
                 <div className={styles.containerRecommendationSubMenu}>
-                    <ul>
+                    <ul className={styles.containerRecommendationSubMenuUl}>
+                        <li>Your Discovery Queue</li>
                         <li>New Releases Queue</li>
                         <li>Community Recommendations</li>
                         <li>Interactive Recommender</li>

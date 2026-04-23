@@ -1,5 +1,6 @@
 .navDropdownMore {
     padding-bottom: 1em;
+    padding-left: 19em;
     margin: .5em 1em 1.5em 1em;
     background: linear-gradient(90deg, rgba(126, 171, 255, 0.1) 0%, #29303e00 100%);
     border-radius: 4px;
@@ -9,11 +10,14 @@
     .containerSectionList {
         padding: 0.75em;
        
-        ul {
+        .containerSectionListMenu {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 10px;
+            list-style: none;
+            cursor: pointer;
+            user-select: none;
 
              li {
                 font-size: 0.813rem;
@@ -70,6 +74,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
+                user-select: none;
 
                 .sectionBtnTextDescription {
                     font-size: 0.875rem;
@@ -77,6 +83,14 @@
                     line-height: 16px;
                     text-transform: uppercase;
                     color: #191d25;
+                    transition: transform .2s ease;
+                }
+
+                &:hover {
+                    .sectionBtnTextDescription{
+                        transform: translateY(10px);
+                        color: #fff;
+                    }
                 }
             }
 
@@ -92,18 +106,25 @@
         gap: 4em;
 
         .sectionSubListSoftware {
-            ul {
+            .sectionSubListSoftwareMenu {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: .5em;
                 margin-top: 10px;
-
+                list-style: none;
+                cursor: pointer;
+                user-select: none;
+                
                 li {
                     font-size: 0.813rem;
                     font-weight: 400;
                     color: #DCDEDF;
                     padding: 0;
+
+                    &:hover {
+                    color: #fff;
+                }
                 }
 
                 .sectionBar {
@@ -119,18 +140,25 @@
             align-self: start;
             margin-top: 1.6em;
 
-            ul {
+            .sectionSubListEventMenu {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: .5em;
                 margin-top: 10px;
+                list-style: none;
+                cursor: pointer;
+                user-select: none;
 
                 li {
                     font-size: 0.813rem;
                     font-weight: 400;
                     color: #DCDEDF;
                     padding: 0;
+
+                    &:hover {
+                    color: #fff;
+                }
                 }
             }
         }

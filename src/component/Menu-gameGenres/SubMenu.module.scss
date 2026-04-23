@@ -2,15 +2,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
-    background: radial-gradient(107.95% 57.49% at 50% 100%, #18253533 0%, #18253585 5%, #182535d9 20%, #182535 60%, #192330 100%);
+    background: radial-gradient(107.95% 57.49% at 50% 100%,
+            rgb(24, 37, 53) 0%,
+            rgb(24, 37, 53) 10%,
+            rgb(24, 37, 53) 30%,
+            #182535 60%,
+            #192330 100%);
     position: relative;
-    
-    ul {
+
+    .containerNavMenu {
         display: flex;
         align-items: center;
         list-style: none;
-        
+        margin-left: 20em;
+
         li {
             color: #fff;
             padding: 1em;
@@ -23,66 +28,103 @@
             &:hover .icon {
                 transform: translateY(2px);
             }
-            
+
             .icon {
-                transition: .2s ease-in-out;
+                transition: ease-in-out;
             }
+
+            .NavMenuText {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: .15em;
+                    left: 0;
+                    bottom: -4px;
+                    background-color: #51b6ff;
+                    position: absolute;
+                    z-index: 1;
+
+                }
+
+            }
+
+            // Animar entrada e saida do NavMenuText
         }
-          
+
         .containerForm {
             display: flex;
             margin-right: 10px;
             justify-self: flex-end;
-            
+
             .searchInput {
-                width: 26.058em; //343.433 px
+                width: 32em; //343.433 px 26.058 no antigo
                 height: 2.6em; //32 px
                 background-color: #ffffff20;
                 border: 1px solid #ffffff24;
                 padding-left: 10px;
-    
+                margin-left: 1em;
+
                 &::placeholder {
                     color: #b8b6b4;
                 }
-    
+
                 &:hover {
-                    border: 1px solid rgba(26,160,255,.39);
+                    border: 1px solid rgba(26, 160, 255, .39);
                 }
-    
+
                 &:focus {
                     border: 1px solid #1a9fff;
                     outline: none;
-                    box-shadow: 0px 2px 2px 0px rgba(0,0,0,.25) inset;
+                    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .25) inset;
                     background: #242931;
                 }
             }
-    
+
             .btnSubmit {
                 width: 2.85em;
                 border-radius: 0px;
                 background-color: #45acff;
-                box-shadow: 2px 2px 3px rgba(0,0,0,.2);
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
                 border: none;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-    
+
                 &:hover .iconSearch {
                     transform: scale(1.2);
                 }
+
                 .iconSearch {
                     transition: transform .2s ease-out;
                 }
             }
         }
     }
-    
-    .dropdownMenu {
-        // position: absolute;
-        top: 44px;
-        left: 0;
-        width: 100vw;
+
+    .containerDropDownMenu {
+        background: radial-gradient(107.95% 57.49% at 50% 100%,
+                rgba(24, 37, 53, 0.05) 0%,
+                rgba(24, 37, 53, 0.2) 10%,
+                rgba(24, 37, 53, 0.8) 30%,
+                #182535 60%,
+                #192330 100%);
+
+        // overflow: hidden;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        // bottom: 0;
+        top: 100%;
     }
+
+    // .dropdownMenu {
+    //     // position: absolute;
+    //     top: 44px;
+    //     left: 0;
+    //     width: 100vw;
+    // }
 
 }

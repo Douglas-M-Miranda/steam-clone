@@ -99,7 +99,7 @@ function CategoriesMenu() {
 
             <div className={styles.containerCategoriesTags}>
                 <div className={styles.groupTags}>
-                    <ul>
+                    <ul className={styles.groupTagsMenu}>
                         <li>Adventure</li>
                         <li>Puzzle</li>
                         <li>Casual</li>

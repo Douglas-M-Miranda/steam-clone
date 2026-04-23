@@ -1,6 +1,7 @@
 // 0.688
 .navDropdownCategories {
     margin: .5em 1em;
+    margin-left: 20em;
     .containerCategoriesGenres {
         .CategoriesGenresTexts {
             display: flex;
@@ -99,9 +100,12 @@
         margin: 2em 0;
         
         .groupTags {
-            ul {
+            .groupTagsMenu {
                 display: flex;
                 gap: 10px;
+                list-style: none;
+                cursor: pointer;
+                user-select: none;
                 li {
                     font-size: 0.75rem;
                     font-weight: 400;

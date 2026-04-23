@@ -5,6 +5,7 @@
     align-items: center;
     gap: 25px;
     height: 6.5em;
+    padding-left: 20em;
 
     .menuLogo {
         margin-left: 1em;
@@ -20,13 +21,24 @@
 
             list-style: none;
 
+            li{
+                &:first-child {
+                    
+                    span {
+                        position: relative;
+                        color: #1a9fff;
+                        &:hover{color: #1a9fff;}
+                    }
+                }
+            }
+
             .naveItem {
                 padding: .5em;
                 text-decoration: none;
                 font-size: 1rem;
                 font-weight: 500;
                 color: #dcdedf;
-                position: relative;
+                position: relative; 
 
                 &:hover {
                     color: #ffffff;

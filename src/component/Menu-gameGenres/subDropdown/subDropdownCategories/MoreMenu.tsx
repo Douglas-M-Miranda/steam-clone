@@ -6,7 +6,7 @@ function MoreMenu() {
         <nav className={style.navDropdownMore}>
 
             <div className={style.containerSectionList}>
-                <ul>
+                <ul className={style.containerSectionListMenu}>
                     <li>
                         <button className={style.containerSectionListBtn} type='button'>
                             Special Sections
@@ -46,7 +46,7 @@ function MoreMenu() {
 
             <div className={style.containerSectionSubList}>
                 <div className={style.sectionSubListSoftware}>
-                    <ul>
+                    <ul className={style.sectionSubListSoftwareMenu}>
                         <li>Software</li>
                         <li>Soundtrack</li>
                         <li>Early Acess</li>
@@ -58,7 +58,7 @@ function MoreMenu() {
                 </div>
 
                 <div className={style.sectionSubListEvent}>
-                    <ul>
+                    <ul className={style.sectionSubListEventMenu}>
                         <li>Steam Next Fest</li>
                         <li>The Steam Awards</li>
                         <li>Steam Replay</li>

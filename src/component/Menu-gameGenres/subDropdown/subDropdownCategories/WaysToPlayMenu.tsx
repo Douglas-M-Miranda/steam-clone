@@ -27,7 +27,7 @@ function WaysToPlayMenu() {
             </div>
 
             <div className={styles.containerWaysToPlaySubMenu}>
-                <ul>
+                <ul className={styles.containerWaysToPlaySubMenuList}>
                     <li>Local Area Network</li>
                     <li>Local Multiplayer & Party</li>
                     <li>Massively Multiplayer</li>
